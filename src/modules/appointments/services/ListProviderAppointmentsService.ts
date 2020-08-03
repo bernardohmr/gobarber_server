@@ -36,7 +36,6 @@ class ListProviderAppointmentService {
     );
 
     if (!appointments) {
-      console.log('buscou no banco');
       appointments = await this.appointmentsRepository.findAllInDayFromProvider(
         {
           provider_id,

@@ -22,6 +22,9 @@ class User {
   email: string;
 
   @Column()
+  type: string;
+
+  @Column()
   @Exclude()
   password: string;
 
